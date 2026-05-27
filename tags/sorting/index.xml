@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sorting on Raphael's Digital Garden</title><link>https://notes.riyt.dev/tags/sorting/</link><description>Recent content in Sorting on Raphael's Digital Garden</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 Apr 2026 19:19:19 +0300</lastBuildDate><atom:link href="https://notes.riyt.dev/tags/sorting/index.xml" rel="self" type="application/rss+xml"/><item><title>Angles of a Triangle</title><link>https://notes.riyt.dev/notes/leetcode-solutions/angles-of-a-triangle/</link><pubDate>Sun, 12 Apr 2026 19:19:19 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/angles-of-a-triangle/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;We are giving 3 sides of a supposed triangle and we want to see if we can form a triangle, and return the angles in degrees.&lt;/p&gt;
+&lt;p&gt;To create a triangle from these 3 sides, we want the sum of any two sides to be greater than the third side (Triangle Inequality Theorem). If this condition is not met that means we cannot create a triangle from these 3 sides.&lt;/p&gt;</description></item><item><title>Robot Collisions</title><link>https://notes.riyt.dev/notes/leetcode-solutions/robot-collisions/</link><pubDate>Wed, 01 Apr 2026 22:28:56 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/robot-collisions/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;We have a bunch of robots that are moving in a horizontal line going either left (&lt;strong&gt;L&lt;/strong&gt;), or right (&lt;strong&gt;R&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Robots are numbered from &lt;strong&gt;1&lt;/strong&gt; until &lt;strong&gt;n&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Robot &lt;code&gt;1&lt;/code&gt; is at &lt;code&gt;position[0]&lt;/code&gt; with &lt;code&gt;health[0]&lt;/code&gt; and &lt;code&gt;direction[0]&lt;/code&gt;. Since each robot might differ in position, that means the positions array might not be ordered.&lt;/p&gt;
+&lt;p&gt;At first we need to order the arrays and keep hold the original index since the result array require us to return in the same order that the robots were given.&lt;/p&gt;</description></item></channel></rss>

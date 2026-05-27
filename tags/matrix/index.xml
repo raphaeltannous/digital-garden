@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matrix on Raphael's Digital Garden</title><link>https://notes.riyt.dev/tags/matrix/</link><description>Recent content in Matrix on Raphael's Digital Garden</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 Apr 2026 18:47:16 +0300</lastBuildDate><atom:link href="https://notes.riyt.dev/tags/matrix/index.xml" rel="self" type="application/rss+xml"/><item><title>Find the Degree of Each Vertex</title><link>https://notes.riyt.dev/notes/leetcode-solutions/find-the-degree-of-each-vertex/</link><pubDate>Sun, 12 Apr 2026 18:47:16 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/find-the-degree-of-each-vertex/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The degree of a vertex is the number of edges connected to it, and &lt;code&gt;matrix[i][j]&lt;/code&gt; is either &lt;code&gt;1&lt;/code&gt; for connected or &lt;code&gt;0&lt;/code&gt; for not connected.&lt;/p&gt;
+&lt;p&gt;We are tasked to return the number of edges connected to &lt;code&gt;i&lt;/code&gt;, and the sum of &lt;code&gt;matrix[i]&lt;/code&gt; is the number of edges connected to &lt;code&gt;i&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id="approach"&gt;
+ Approach
+ &lt;a href="#approach" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Initialize&lt;/strong&gt; &lt;code&gt;result&lt;/code&gt; of type &lt;code&gt;[]int&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Loop&lt;/strong&gt; (&lt;code&gt;i&lt;/code&gt;) over &lt;code&gt;matrix&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Loop&lt;/strong&gt; (&lt;code&gt;j&lt;/code&gt;) over &lt;code&gt;matrix[i]&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt; &lt;code&gt;matrix[i][j]&lt;/code&gt; to &lt;code&gt;result[i]&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Return&lt;/strong&gt; &lt;code&gt;result&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="complexity"&gt;
+ Complexity
+ &lt;a href="#complexity" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Time complexity: &lt;span class="katex"&gt;&lt;span class="katex-mathml"&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding="application/x-tex"&gt;O(N^2)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class="katex-html" aria-hidden="true"&gt;&lt;span class="base"&gt;&lt;span class="strut" style="height:1.0641em;vertical-align:-0.25em;"&gt;&lt;/span&gt;&lt;span class="mord mathnormal" style="margin-right:0.02778em;"&gt;O&lt;/span&gt;&lt;span class="mopen"&gt;(&lt;/span&gt;&lt;span class="mord"&gt;&lt;span class="mord mathnormal" style="margin-right:0.10903em;"&gt;N&lt;/span&gt;&lt;span class="msupsub"&gt;&lt;span class="vlist-t"&gt;&lt;span class="vlist-r"&gt;&lt;span class="vlist" style="height:0.8141em;"&gt;&lt;span style="top:-3.063em;margin-right:0.05em;"&gt;&lt;span class="pstrut" style="height:2.7em;"&gt;&lt;/span&gt;&lt;span class="sizing reset-size6 size3 mtight"&gt;&lt;span class="mord mtight"&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="mclose"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;</description></item><item><title>Maximum Amount of Money Robot Can Earn</title><link>https://notes.riyt.dev/notes/leetcode-solutions/maximum-amount-of-money-robot-can-earn/</link><pubDate>Thu, 02 Apr 2026 23:17:48 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/maximum-amount-of-money-robot-can-earn/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The problem is a dynamic programming problem with a small twist which is that we can neutralize robbers that rob the robot if the cell is negative at most &lt;strong&gt;2&lt;/strong&gt; times.&lt;/p&gt;
+&lt;p&gt;This will introduce an additional constraint to cell position which is the number of neutralize left to use.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;R&lt;/code&gt; is &lt;code&gt;len(coins)&lt;/code&gt; and &lt;code&gt;C&lt;/code&gt; is &lt;code&gt;len(coins[0])-1&lt;/code&gt;. &lt;code&gt;nLeft&lt;/code&gt; is the number of neutralizations left.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Starting from &lt;code&gt;(0, 0)&lt;/code&gt; and going to &lt;code&gt;(R-1, C-1)&lt;/code&gt;, we at each step consider two cases:&lt;/p&gt;</description></item><item><title>Minimum XOR Path in a Grid</title><link>https://notes.riyt.dev/notes/leetcode-solutions/minimum-xor-path-in-a-grid/</link><pubDate>Sat, 28 Mar 2026 23:03:34 +0200</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/minimum-xor-path-in-a-grid/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;This problem is the third question in the biweekly LeetCode contest 179, and I was unable to solve it. This is a Grid Path Dynamic Programming problem, but with a twist that breaks the classical Dynamic Programming approach, because the cost of the function is &lt;strong&gt;XOR&lt;/strong&gt;, not addition/subtraction.&lt;/p&gt;
+&lt;p&gt;During the contest, I “solved” (more like attempted) the problem in 3 ways.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Top-down/Bottom-up Dynamic Programming&lt;/strong&gt; storing a single value per cell; however, since we are dealing with XOR, storing a single value does not work.&lt;/p&gt;</description></item></channel></rss>

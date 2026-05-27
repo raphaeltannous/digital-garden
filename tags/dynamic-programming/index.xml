@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dynamic Programming on Raphael's Digital Garden</title><link>https://notes.riyt.dev/tags/dynamic-programming/</link><description>Recent content in Dynamic Programming on Raphael's Digital Garden</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Apr 2026 23:17:48 +0300</lastBuildDate><atom:link href="https://notes.riyt.dev/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Maximum Amount of Money Robot Can Earn</title><link>https://notes.riyt.dev/notes/leetcode-solutions/maximum-amount-of-money-robot-can-earn/</link><pubDate>Thu, 02 Apr 2026 23:17:48 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/maximum-amount-of-money-robot-can-earn/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The problem is a dynamic programming problem with a small twist which is that we can neutralize robbers that rob the robot if the cell is negative at most &lt;strong&gt;2&lt;/strong&gt; times.&lt;/p&gt;
+&lt;p&gt;This will introduce an additional constraint to cell position which is the number of neutralize left to use.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;R&lt;/code&gt; is &lt;code&gt;len(coins)&lt;/code&gt; and &lt;code&gt;C&lt;/code&gt; is &lt;code&gt;len(coins[0])-1&lt;/code&gt;. &lt;code&gt;nLeft&lt;/code&gt; is the number of neutralizations left.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Starting from &lt;code&gt;(0, 0)&lt;/code&gt; and going to &lt;code&gt;(R-1, C-1)&lt;/code&gt;, we at each step consider two cases:&lt;/p&gt;</description></item><item><title>Minimum XOR Path in a Grid</title><link>https://notes.riyt.dev/notes/leetcode-solutions/minimum-xor-path-in-a-grid/</link><pubDate>Sat, 28 Mar 2026 23:03:34 +0200</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/minimum-xor-path-in-a-grid/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;This problem is the third question in the biweekly LeetCode contest 179, and I was unable to solve it. This is a Grid Path Dynamic Programming problem, but with a twist that breaks the classical Dynamic Programming approach, because the cost of the function is &lt;strong&gt;XOR&lt;/strong&gt;, not addition/subtraction.&lt;/p&gt;
+&lt;p&gt;During the contest, I “solved” (more like attempted) the problem in 3 ways.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Top-down/Bottom-up Dynamic Programming&lt;/strong&gt; storing a single value per cell; however, since we are dealing with XOR, storing a single value does not work.&lt;/p&gt;</description></item></channel></rss>

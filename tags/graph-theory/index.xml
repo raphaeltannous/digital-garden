@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph Theory on Raphael's Digital Garden</title><link>https://notes.riyt.dev/tags/graph-theory/</link><description>Recent content in Graph Theory on Raphael's Digital Garden</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 Apr 2026 18:47:16 +0300</lastBuildDate><atom:link href="https://notes.riyt.dev/tags/graph-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Find the Degree of Each Vertex</title><link>https://notes.riyt.dev/notes/leetcode-solutions/find-the-degree-of-each-vertex/</link><pubDate>Sun, 12 Apr 2026 18:47:16 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/find-the-degree-of-each-vertex/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The degree of a vertex is the number of edges connected to it, and &lt;code&gt;matrix[i][j]&lt;/code&gt; is either &lt;code&gt;1&lt;/code&gt; for connected or &lt;code&gt;0&lt;/code&gt; for not connected.&lt;/p&gt;
+&lt;p&gt;We are tasked to return the number of edges connected to &lt;code&gt;i&lt;/code&gt;, and the sum of &lt;code&gt;matrix[i]&lt;/code&gt; is the number of edges connected to &lt;code&gt;i&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id="approach"&gt;
+ Approach
+ &lt;a href="#approach" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Initialize&lt;/strong&gt; &lt;code&gt;result&lt;/code&gt; of type &lt;code&gt;[]int&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Loop&lt;/strong&gt; (&lt;code&gt;i&lt;/code&gt;) over &lt;code&gt;matrix&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Loop&lt;/strong&gt; (&lt;code&gt;j&lt;/code&gt;) over &lt;code&gt;matrix[i]&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt; &lt;code&gt;matrix[i][j]&lt;/code&gt; to &lt;code&gt;result[i]&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Return&lt;/strong&gt; &lt;code&gt;result&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="complexity"&gt;
+ Complexity
+ &lt;a href="#complexity" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Time complexity: &lt;span class="katex"&gt;&lt;span class="katex-mathml"&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding="application/x-tex"&gt;O(N^2)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class="katex-html" aria-hidden="true"&gt;&lt;span class="base"&gt;&lt;span class="strut" style="height:1.0641em;vertical-align:-0.25em;"&gt;&lt;/span&gt;&lt;span class="mord mathnormal" style="margin-right:0.02778em;"&gt;O&lt;/span&gt;&lt;span class="mopen"&gt;(&lt;/span&gt;&lt;span class="mord"&gt;&lt;span class="mord mathnormal" style="margin-right:0.10903em;"&gt;N&lt;/span&gt;&lt;span class="msupsub"&gt;&lt;span class="vlist-t"&gt;&lt;span class="vlist-r"&gt;&lt;span class="vlist" style="height:0.8141em;"&gt;&lt;span style="top:-3.063em;margin-right:0.05em;"&gt;&lt;span class="pstrut" style="height:2.7em;"&gt;&lt;/span&gt;&lt;span class="sizing reset-size6 size3 mtight"&gt;&lt;span class="mord mtight"&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="mclose"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;</description></item></channel></rss>

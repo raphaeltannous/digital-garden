@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geometry on Raphael's Digital Garden</title><link>https://notes.riyt.dev/tags/geometry/</link><description>Recent content in Geometry on Raphael's Digital Garden</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 Apr 2026 19:19:19 +0300</lastBuildDate><atom:link href="https://notes.riyt.dev/tags/geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>Angles of a Triangle</title><link>https://notes.riyt.dev/notes/leetcode-solutions/angles-of-a-triangle/</link><pubDate>Sun, 12 Apr 2026 19:19:19 +0300</pubDate><guid>https://notes.riyt.dev/notes/leetcode-solutions/angles-of-a-triangle/</guid><description>&lt;h1 id="intuition"&gt;
+ Intuition
+ &lt;a href="#intuition" class="anchor"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;We are giving 3 sides of a supposed triangle and we want to see if we can form a triangle, and return the angles in degrees.&lt;/p&gt;
+&lt;p&gt;To create a triangle from these 3 sides, we want the sum of any two sides to be greater than the third side (Triangle Inequality Theorem). If this condition is not met that means we cannot create a triangle from these 3 sides.&lt;/p&gt;</description></item></channel></rss>
